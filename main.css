@@ -6,6 +6,8 @@ html {
 .topnav {
     background-color: #ffffff;
     overflow: hidden;
+    position: fixed;
+    width: 100%;
 }
 
 /* Style the links inside the navigation bar */
@@ -19,7 +21,7 @@ html {
     font-size: 1.2em;
 }
 .topnav img {
-	padding: .5em 1em .5em 3em;
+	padding: .5em 0em .5em 2em;
 }
 
 /* Change the color of links on hover */
@@ -94,6 +96,7 @@ function myFunction() {
 }*/
 .main {
     background-image: url('img/levitation-1374181_1920.jpg');
+    width: 100%;
     height:100vh;
     background-size: cover;
     position: relative;
@@ -103,6 +106,8 @@ function myFunction() {
 	z-index:1;
 	color: white;
     font-size: 2em;
+    text-align: center;
+    padding-top: 10em;
 }
 .about-bar {
 	width: 100%;
@@ -118,7 +123,7 @@ function myFunction() {
 }
 section h1{
 	padding-top: .33em;
-	font-size: 2em;
+	font-size: 1.8em;
 	color: #1D242E;
 }
 div.gallery {
@@ -155,16 +160,20 @@ div.gallery img {
     display: table;
     clear: both;
 }
+.container {
+	text-align: center;
+}
+.container h3{
+	padding: 1em;
+	font-size: 1.2em;
+}
 .fa {
   padding: 1em;
-  font-size: 2em;
-  width: 10%;
+  font-size: 1em;
+  width: 8.9%;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
-}
-.connect {
-
 }
 .fa:hover {
     opacity: 0.7;
