@@ -2,6 +2,23 @@ html {
 	font-family: Helvetica;
 	font-size: 90%;
 }
+nav {
+    position: fixed;
+    height: 3em;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #EBFBFB;
+}
+.col-sm-1 {
+    padding: 1em;
+}
+.col-sm-4 {
+    height: 100%;
+    padding-left: 3em;
+    padding-top: 0.15em;
+}
 .main {
     background-image: url('img/levitation-1374181_1920.jpg');
     height:100vh;
@@ -9,40 +26,9 @@ html {
     position: relative;
     z-index: -1;
     color: white;
-    width: 100%;
     font-size: 2em;
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #EBFBFB;
-}
-nav li {
-	display: block;
-    float: right;
-    margin-right: 1em;
-    padding: 1.5em 1em;
-    color: #161F26;
-}
-nav {
-	position: fixed;
-	width: 100%;
-}
-li a {
-    display: block;
-    color: #161F26;
-    text-align: center;
-    text-decoration: none;
-}
-li a:hover {
-    background-color: #557079;
-}
-.container {
-	z-index: 4;
-	color: black;
-}
+
 .about-bar {
 	padding: 1em;
 }
