@@ -1,6 +1,8 @@
+@media screen and (min-width: 25em){
+    html { font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) ); }
+  }
 html {
-	font-family: Helvetica;
-	font-size: 90%;
+	font-family: 'Cabin', sans-serif;;
 }
  /* Add a black background color to the top navigation */
 .topnav {
@@ -16,12 +18,12 @@ html {
     display: block;
     color: #1D242E;
     text-align: center;
-    padding: 1em;
+    padding: 1.5em;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: .42em;
 }
 .topnav img {
-	padding: .5em 0em .5em 2em;
+	padding: .2em 0em .2em 1em;
 }
 
 /* Change the color of links on hover */
@@ -66,34 +68,6 @@ function myFunction() {
         x.className = "topnav";
     }
 }
-/*nav {
-    position: fixed;
-    height: 4em;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: white;
-}
-.nav-links {
-    padding: 1.5em;
-}
-.nav-links a {
-	color: #1D242E;
-	font-family: serif;
-}
-.col-sm-2 {
-	text-align: left;
-	font-family: serif;
-	padding-top: 1.5em;
-	color: #1D242E;
-}
-.logo {
-    height: 100%;
-    padding-left: 3em;
-    padding-top: .75em;
-    vertical-align: top;
-}*/
 .main {
     background-image: url('img/levitation-1374181_1920.jpg');
     width: 100%;
@@ -105,15 +79,21 @@ function myFunction() {
 .container p{
 	z-index:1;
 	color: white;
-    font-size: 2em;
-    text-align: center;
-    padding-top: 10em;
+    font-size: 1.1em;
+    text-align: left;
+    padding-top: 5.5em;
+   @responsive-font(2.5vw, 35px, 150px, 50px);
+}
+.container h1 {
+	font-size: 2em;
+	color: white;
+	padding-top: 1.3em;
 }
 .about-bar {
 	width: 100%;
 	height: 5em;
 	background-color: white;
-	font-size: 2em; 
+	font-size: 1em; 
 	text-align: center;
 }
 .about-bar p {
@@ -122,8 +102,8 @@ function myFunction() {
 	color: #1D242E;
 }
 section h1{
-	padding-top: .33em;
-	font-size: 1.8em;
+	padding-top: 1em;
+	font-size: 1em;
 	color: #1D242E;
 }
 div.gallery {
@@ -165,11 +145,11 @@ div.gallery img {
 }
 .container h3{
 	padding: 1em;
-	font-size: 1.2em;
+	font-size: 1em;
 }
 .fa {
   padding: 1em;
-  font-size: 1em;
+  font-size: .5em;
   width: 8.9%;
   text-align: center;
   text-decoration: none;
@@ -198,4 +178,3 @@ div.gallery img {
   background: #007bb5;
   color: white;
 }
-
