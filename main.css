@@ -1,13 +1,10 @@
-@media screen and (min-width: 25em){
-    html { font-size: calc( 16px + (24 - 16) * (100vw - 300px) / (800 - 400) ); }
-  }
 html {
+	font-size: 100%;
 	font-family: 'Cabin', sans-serif;;
 }
- /* Add a black background color to the top navigation */
+ /* fix top navigation, white color, full width */
 .topnav {
     background-color: #ffffff;
-    overflow: hidden;
     position: fixed;
     width: 100%;
 }
@@ -20,10 +17,19 @@ html {
     text-align: center;
     padding: 1.5em;
     text-decoration: none;
-    font-size: .42em;
+    font-size: .8em;
 }
 .topnav img {
 	padding: .2em 0em .2em 1em;
+	float: left;
+}
+.topnav p {
+	color: #1D242E;
+	font-size: .8em;
+	width: 20%;
+	float: left;
+	margin-top: 1.5em;
+	margin-left: 1em;
 }
 
 /* Change the color of links on hover */
@@ -31,7 +37,6 @@ html {
     background-color: #ddd;
     color: black;
 }
-
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
     display: none;
@@ -77,11 +82,12 @@ function myFunction() {
     z-index: -1;
 }
 .container p{
+	margin-top: 4.5em;
+	margin-left: .5em;
 	z-index:1;
 	color: white;
-    font-size: 1.2em;
+    font-size: 2em;
     text-align: left;
-    padding-top: 5.5em;
 }
 .container h1 {
 	font-size: 2em;
@@ -92,23 +98,22 @@ function myFunction() {
 	width: 100%;
 	height: 5em;
 	background-color: white;
-	font-size: .6em; 
 	text-align: center;
 }
 .about-bar p {
+	font-size: .8em; 
 	padding-top: 1em;
 	padding-bottom: 0em;
 	color: #1D242E;
 }
-section h1{
-	padding-top: 1em;
-	font-size: 1em;
-	color: #1D242E;
+.websites {
+    border: 1px solid #1D242E;
 }
 div.gallery {
     border: 1px solid #ccc;
 }
 div.gallery:hover {
+	border: 1px solid #1D242E;
 }
 div.gallery img {
     width: 100%;
@@ -116,7 +121,6 @@ div.gallery img {
 }
 .responsive {
 	float: left;
-    padding: 0;
     width: 33.32%;
 }
 @media only screen and (max-width: 700px){
@@ -130,22 +134,18 @@ div.gallery img {
         width: 100%;
     }
 }
-footer .container {
-	text-align: center;
-	width: 100%;
-}
-.container h3{
-	padding: .5em;
+.row {
 }
 .col-xs-4 {
-	font-size: .5em;
-	color: #1D242E;
+	float: left;
+	width: 33.332%;
 	margin-bottom: 1.5em;
+	margin-top: 1.5em;;
 }
-.col-xs-4 p{
-	font-size: .6em;
+.col-xs-4 h3 {
+	font-size: .8em;
 	color: #1D242E;
-
+	margin: auto;
 }
 .fa {
   padding: 1em;
